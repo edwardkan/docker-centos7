@@ -12,7 +12,7 @@
 # supervisord: https://github.com/million12/docker-centos-supervisor
 #
 # Run:
-# docker run -h centos7 -p 192.168.3.129:22:22 -d --name centos7 -v /home/alfred/docker/data/centos7:/home/alfred/doc kanalfred/centos7
+# docker run -h centos7 -p 192.168.3.129:22:22 -d --name centos7 -v /home/alfred/docker/data/centos7:/home/alfred/doc edwardkan/centos7
 # docker run -e 'ROOT_PASSWORD=test123' -h centos7 --name centos7 -p 2201:22 -d kanalfred/centos7
 # 
 # Build:
