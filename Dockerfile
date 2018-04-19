@@ -12,8 +12,8 @@
 # supervisord: https://github.com/million12/docker-centos-supervisor
 #
 # Run:
-# docker run -h centos7 -p 192.168.3.129:22:22 -d --name centos7 -v /home/alfred/docker/data/centos7:/home/alfred/doc edwardkan/centos7
-# docker run -e 'ROOT_PASSWORD=test123' -h centos7 --name centos7 -p 2201:22 -d kanalfred/centos7
+# docker run --rm -it -h centos7 -p 1022:22 -d --name centos7 -v /mnt/dockerData/centos:/mnt/remoteData edwardkan/docker-centos7 bash
+# docker run -e 'ROOT_PASSWORD=test123' -h centos7 --name centos7 -p 2201:22 -d edwardkan/centos7
 # 
 # Build:
 # docker build -t edwardkan/centos7 .
@@ -53,6 +53,7 @@ RUN \
         passwd \
         cronie \
         wget \
+        vim \
         perl \
         mysql \
         rsync \
