@@ -12,7 +12,7 @@
 # supervisord: https://github.com/million12/docker-centos-supervisor
 #
 # Run:
-# docker run --rm -it -h centos7 -p 1022:22 -d --name centos7 -v /mnt/dockerData/centos:/mnt/remoteData edwardkan/docker-centos7 bash
+# docker run --rm -it -h centos7 -p 1022:22 -d --name centos7 -v /mnt/dockerData/centos:/mnt/remoteStorage edwardkan/docker-centos7 bash
 # docker run -e 'ROOT_PASSWORD=test123' -h centos7 --name centos7 -p 2201:22 -d edwardkan/centos7
 # 
 # Build:
