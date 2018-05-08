@@ -74,6 +74,7 @@ RUN \
     sshd-keygen && \
     sed -i "s/#UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && \
     sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config && \
+    sed -i "s/PasswordAuthentication.*/PasswordAuthentication no/g" /etc/ssh/sshd_config && \
 
     # Set timezone (Pacific Time Zone) Vancouver
     rm -f /etc/localtime && \
